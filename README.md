@@ -1,10 +1,10 @@
-#Summary
+# Summary
 
 This project aims to test the understanding and workflow of data warehousing techniques.
 Amazon Redshift gives you the best of high performance data warehouses with the unlimited flexibility and we have used Python for coding and Amazon s3 for storage. 
 The task incorporates setting up the Sparkify application which has all the songs data which the users are listening to.
 
-##Source Data and Schema
+## Source Data and Schema
 
 Following are the fact and dimension tables made for this project:
 
@@ -27,11 +27,9 @@ Run command to install requirements.
 ```bash
 pip install -r requirements.txt
 ```
-
 Update the dwh.cfg file with you Amazon Redshift cluster credentials and IAM role that can access the cluster.
 
 Use the python scripts in the order to create tables and insert data
-
 ```python
 python sql_queries.py
 python create_tables.py
@@ -41,7 +39,6 @@ python etl.py
 ## Testing
 
 Check on Redshift Data Query Editor.
-
 ```bash
 SELECT * FROM songplays LIMIT 5 ;
 SELECT * FROM users LIMIT 5 ;
